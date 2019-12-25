@@ -55,4 +55,27 @@ $(function() {
         }
     });
 
+    // Mobile menu
+
+    $('body').on('click', '.mobile-menu__btn', function() {
+        $('.mobile-menu').addClass('mobile-menu--active');
+        $('body').addClass('mobile-menu--open');
+    });
+
+    $('body').on('click', '.mobile-menu__close', function() {
+        $('.mobile-menu').removeClass('mobile-menu--active');
+        $('body').removeClass('mobile-menu--open');
+    });
+
+    $('body').on('click', '.mobile-menu__link--anchor', function(e){
+        $('.mobile-menu').removeClass('mobile-menu--active');
+        $('body').removeClass('mobile-menu--open');
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 500);
+        e.preventDefault();
+        return false;
+    });
+
 });

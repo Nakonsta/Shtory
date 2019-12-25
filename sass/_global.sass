@@ -59,13 +59,11 @@ svg, svg path
         &::after
             content: ''
             position: absolute
-            bottom: 17px
+            bottom: -17px
             left: 0
             height: 1px
             width: 47px
             background-color: $rose
-            @media (max-width: 767px)
-                bottom: -17px
     @media (max-width: 767px)
         font-size: 32px
         line-height: 100%
@@ -138,6 +136,7 @@ svg, svg path
         margin-bottom: 15px
 
 .keep-in-touch
+    display: none
     position: relative
     z-index: 10
     &__outer
@@ -180,3 +179,15 @@ svg, svg path
     &:hover path,
     &:focus path
         stroke: #ffffff
+
+.to-main
+    position: relative
+    text-align: center
+    padding-bottom: 16px
+    z-index: 5
+    &__svg
+        margin-top: -3px
+        margin-right: 5px
+    &__link
+        font-weight: 300
+        color: #ffffff
