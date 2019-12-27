@@ -92,9 +92,15 @@
 
 .style
     padding-bottom: 100px
+    @media (max-width: 767px)
+        padding-bottom: 20px
+    @media (max-width: 767px)
+        background-color: #ffffff
     .design__wrapper
         position: relative
         height: 634px
+        @media (max-width: 767px)
+            height: auto
     .design__designer
         width: auto
         height: 94%
@@ -109,6 +115,8 @@
         background-size: cover
         background-position: 50% 50%
         z-index: 1
+        @media (max-width: 767px)
+            display: none
     .stroke
         position: absolute
         top: 25px
@@ -118,20 +126,54 @@
         height: 100%
         z-index: 2
         padding: 17px 14px
+        @media (max-width: 991px)
+            width: 70%
+        @media (max-width: 767px)
+            width: 100%
+            padding: 0
+            position: static
     .design__inner-block
         height: 100%
         width: 100%
         background-color: #ffffff
         padding: 57px 65px 50px 60px
+        @media (max-width: 991px)
+            padding: 40px
+        @media (max-width: 767px)
+            padding: 40px 40px 0
+        @media (max-width: 575px)
+            padding: 40px 25px 0
     .h2
         margin-bottom: 11px
+        @media (max-width: 991px)
+            font-size: 44px
+        @media (max-width: 767px)
+            font-size: 32px
     .design__annonce
         font-weight: 300
         font-size: 18px
         padding-bottom: 32px
+        @media (max-width: 767px)
+            position: relative
+            padding-left: 80px
+            font-size: 16px
+            padding-bottom: 0
+            margin-bottom: 25px
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                top: 50%
+                transform: translateY(-50%)
+                width: 60px
+                height: 60px
+                border-radius: 50%
+                background: url(../img/avatar.jpg) no-repeat 50% 50% / cover
     .design__list
         padding: 0 0 20px
         list-style: none
+        @media (max-width: 767px)
+            margin-bottom: 5px
     .design__item
         padding-left: 20px
         font-weight: 300
@@ -146,3 +188,10 @@
             background-color: #000000
     .btn
         max-width: 255px
+        @media (max-width: 767px)
+            margin: 0 auto
+    .container
+        @media (max-width: 767px)
+            max-width: 540px
+            padding-right: 15px
+            padding-left: 15px
