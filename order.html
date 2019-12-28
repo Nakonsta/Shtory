@@ -5,12 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Оформление заявки</title>
+
+    <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+            ym(56782099, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+            });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/56782099" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-M7LZ7LJ');</script>
+    <!-- End Google Tag Manager -->
+
     <link rel="stylesheet" href="./css/libs/bootstrap.min.css">
     <link rel="stylesheet" href="./css/libs/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./css/libs/slick.css">
     <link rel="stylesheet" href="./css/bundle.min.css">
 </head>
-<body>    
+<body>
+    <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7LZ7LJ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->    
     <header class="header">
         <div class="header__inner container">
             <div class="row">
@@ -35,22 +64,22 @@
                     </a>
                 </div>
                 <div class="col-lg-6 d-none d-lg-block header__nav-block">
-                    <nav class="header__nav">
+                    <nav class="header__nav d-none">
                         <ul class="header__nav-list">
                             <li class="header__nav-item">
                                 <a href="index.html" class="header__nav-link">Главная</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#about" class="header__nav-link">О нас</a>
+                                <a href="#about" class="header__nav-link smooth-scroll">О нас</a>
                             </li>
                             <li class="header__nav-item">
                                 <a href="portfolio.html" class="header__nav-link">Портфолио</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#steps" class="header__nav-link">Этапы работы</a>
+                                <a href="#steps" class="header__nav-link smooth-scroll">Этапы работы</a>
                             </li>
                             <li class="header__nav-item">
-                                <a href="#contacts" class="header__nav-link">Контакты</a>
+                                <a href="#contacts" class="header__nav-link smooth-scroll">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -82,16 +111,16 @@
                                 <a href="index.html" class="mobile-menu__link">Главная</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a href="#about" class="mobile-menu__link mobile-menu__link--anchor">О нас</a>
+                                <a href="index.html#about" class="mobile-menu__link mobile-menu__link--anchor">О нас</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a href="portfolio.html" class="mobile-menu__link">Портфолио</a>
+                                <a href="index.htmlportfolio.html" class="mobile-menu__link">Портфолио</a>
                             </li>
                             <li class="mobile-menu__item">
                                 <a href="#steps" class="mobile-menu__link mobile-menu__link--anchor">Этапы работы</a>
                             </li>
                             <li class="mobile-menu__item">
-                                <a href="#contacts" class="mobile-menu__link mobile-menu__link--anchor">Контакты</a>
+                                <a href="index.html#contacts" class="mobile-menu__link mobile-menu__link--anchor">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -131,13 +160,13 @@
     </header>
     <main class="main">
         <div class="wrapper">
-            <section class="banner">
+            <section class="banner order__banner">
                 <div class="banner__inner container">
                     <div class="to-main">
                         <svg class="to-main__svg" xmlns="http://www.w3.org/2000/svg" width="5" height="11" viewBox="0 0 5 11" fill="none">
                             <path d="M0.0771158 5.71929L4.54228 10.9084C4.64741 11.0305 4.81602 11.0305 4.92115 10.9084C5.02628 10.7862 5.02628 10.5902 4.92115 10.4681L0.646418 5.50029L4.92115 0.532507C5.02628 0.41033 5.02628 0.214386 4.92115 0.0922079C4.86958 0.0322724 4.80015 -9.15764e-07 4.7327 -9.0297e-07C4.66526 -8.90176e-07 4.59583 0.0299664 4.54426 0.092208L0.0790985 5.28129C-0.0260341 5.40116 -0.0260331 5.59941 0.0771158 5.71929Z" fill="white"/>
                         </svg>
-                        <a href="#" class="to-main__link">Вернуться на главную</a>
+                        <a href="index.html" class="to-main__link">Вернуться на главную</a>
                     </div>
                     <h1 class="h1">Оформление заявки</h1>
                 </div>
@@ -145,29 +174,30 @@
             <section class="order">
                 <div class="order__inner container">
                     <div class="row">
-                        <div class="col-lg-10 offset-lg-1">
+                        <div class="col-xl-10 offset-xl-1">
                             <div class="order__common">
                                 <div class="stroke">
                                     <div class="order__stroke-inner">
                                         <form class="order__form">
-                                            <div class="order__info">Заполните форму и дизайнер свяжется с вами</div>
+                                            <div class="order__info d-none d-md-block">Заполните форму и дизайнер свяжется с вами</div>
+                                            <div class="order__info d-md-none">Заполните форму</div>
                                             <label for="order-form__name" class="label">
-                                                <input type="text" class="input" name="name" id="order-form__name" placeholder="Имя">
+                                                <input type="text" class="input" name="name" id="order-form__name" placeholder="Имя" required>
                                             </label>
                                             <label for="order-form__phone" class="label">
-                                                <input type="text" class="input" name="phone" id="order-form__phone">
+                                                <input type="text" class="input input__phone" name="phone" id="order-form__phone" placeholder="+7 (___)-___-__-__" required>
                                             </label>
                                             <label for="order-form__email" class="label">
-                                                <input type="email" class="input" name="email" id="order-form__email" placeholder="Email">
+                                                <input type="email" class="input" name="email" id="order-form__email" placeholder="Email" required>
                                             </label>
                                             <label for="order-form__comment" class="label">
-                                                <input type="text" class="input" name="comment" id="order-form__comment" placeholder="Комментарий">
+                                                <input type="text" class="input" name="comment" id="order-form__comment" placeholder="Комментарий" required>
                                             </label>
                                             <label for="order-form__checkbox" class="label label--checkbox">
-                                                <input type="checkbox" class="checkbox" id="order-form__chekbox">
+                                                <input type="checkbox" class="checkbox" id="order-form__chekbox" required>
                                                 <span class="label__text">Согласен с обработкой моих персональных данных в соответствии с <a class="order-form__link">политикой конфиденциальности</a></span>
                                             </label>
-                                            <input type="submit" class="btn btn--tiffany">
+                                            <input type="submit" class="btn btn--tiffany" value="Отправить">
                                             <div class="order-form__safety">Ваши персональные данные в безопасности</div>
                                         </form>
                                     </div>
@@ -211,16 +241,16 @@
                                 <a href="index.html" class="footer__nav-link">Главная</a>
                             </li>
                             <li class="footer__nav-item">
-                                <a href="#about" class="footer__nav-link">О нас</a>
+                                <a href="index.html#about" class="footer__nav-link">О нас</a>
                             </li>
                             <li class="footer__nav-item">
                                 <a href="portfolio.html" class="footer__nav-link">Портфолио</a>
                             </li>
                             <li class="footer__nav-item">
-                                <a href="#steps" class="footer__nav-link">Этапы работы</a>
+                                <a href="index.html#steps" class="footer__nav-link">Этапы работы</a>
                             </li>
                             <li class="footer__nav-item">
-                                <a href="#contacts" class="footer__nav-link">Контакты</a>
+                                <a href="index.html#contacts" class="footer__nav-link">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -282,6 +312,7 @@
     <script src="./js/libs/jquery.fancybox.min.js"></script>
     <script src="./js/libs/parallax.min.js"></script>
     <script src="./js/libs/slick.min.js"></script>
+    <script src="./js/libs/jquery.inputmask.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

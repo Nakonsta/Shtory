@@ -15,7 +15,16 @@
 .label
     display: block
     width: 100%
+    margin-bottom: 0
+    &--checkbox
+        margin-bottom: 24px
+        font-weight: 300
+        @media (max-width: 767px)
+            font-size: 14px
+            margin-top: 5px
 
 .checkbox
     display: inline-block
     margin-right: 9px
+    @media (max-width: 767px)
+        margin-top: 3px
